@@ -187,3 +187,50 @@ header nav {
 .select {
     outline: 2px solid #0071e3;
 }
+
+/* Mobile */
+@media (max-width: 480px) {
+    #navbar li {
+        display: none;
+    }
+
+    #navbar #logo {
+        display: flex;
+    }
+
+    #bottom-header-links a {
+        display: none;
+    }
+
+    #bottom-header-links .btn{
+        display: flex;
+    }
+
+    #main-content {
+        padding: 2rem;
+        overflow: hidden;
+    }
+
+    #main-content #subtitle {
+        font-size: 3rem;
+    }
+}
+
+/* tablet */
+
+@media (max-width: 700px){
+    #main-content {
+        overflow: hidden;
+    }
+
+    #bottom-header-links .btn{
+        display: none;
+    }
+
+    #bottom-header-links a {
+        display: inline-flex;
+        font-size: 0.6rem;
+        justify-content: space-between;
+        align-content: flex-end;
+    }
+}
