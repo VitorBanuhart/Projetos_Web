@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Monte seu PC</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Configure seu PC gamer!</h3>
+        </div>
+        <div class="form_container">
+            <div class="form_header">
+                <p>Formulário</p>
+            </div>
+            <div class="form_body">
+                <h1 class="form_title">Monte fácil seu computador dos sonhos!</h1>
+                <p>Abaixo adicone o nome das peças desejadas</p>
+                <form>
+                    <div class="box_input">
+                        <label for="motherboard">Placa mãe <span class="required-field">*</span></label>
+                        <input type="text" 
+                        name="motherboard"
+                        id="motherboard"
+                        class="block"
+                        minlength="1"
+                        maxlength="20"
+                        placeholder="Digite o nome da placa mãe"
+                        required>
+                    </div>
+                    <div class="box_input">
+                        <label for="cpu">Processador <span class="required-field">*</span></label>
+                        <input type="text" 
+                        name="cpu"
+                        id="cpu"
+                        class="block"
+                        minlength="1"
+                        maxlength="20"
+                        placeholder="Digite o nome do processador"
+                        required>
+                    </div>
+                    <div class="box_input">
+                        <p>Memória ram: <span class="required-field">*</span></p>
+                        <input type="radio" id="8gb" name="ram">
+                        <label for="8gb">8gb </label>
+                        <input type="radio" id="16gb" name="ram">
+                        <label for="16gb">16gb</label>
+                        <input type="radio" id="32gb" name="ram">
+                        <label for="32gb">32gb</label>
+                    </div>
+                    <div class="optional_box">
+                        <p>Armazenamento <span class="required-field">*</span></p>
+                        <ul class="optional-list">
+                            <li>
+                                <input
+                                 type="checkbox"
+                                 name="optional[]"
+                                 id="storage_hd"
+                                 value="storage_hd">
+                                 <label for="storage_hd">Disco rigido</label>
+
+                            </li>
+                            <li>
+                               <input 
+                               type="checkbox"
+                               name="optional[]"
+                               id="storage_ssd"
+                               value="storage_ssd"> 
+                                <label for="storage_ssd">SSD</label>
+                            </li>
+                        </ul>
+                        </div>
+                        <div class="box_input">
+                            <label for="storage_capacity">Escreva quanta capacidade de armazenamento você deseja: <span class="required-field">*</span> </label>
+                            <input type="text"
+                            name="storage_capacity"
+                            id="storage_capacity"
+                            class="block"
+                            minlength="1"
+                            maxlength="10"
+                            placeholder="Digite aqui a capacidade desejada"
+                            required>   
+                        </div>
+                        <div class="optional_box">
+                            <p>Escolha os périfericos desejados </p>
+                            <ul class="optional-list">
+                                <li>
+                                    <input type="checkbox"
+                                    name="optional[]"
+                                    id="mouse"
+                                    value="mouse">
+                                    <label for="mouse">Mouse Gamer</label>
+                                </li>
+                                <li>
+                                   <input type="checkbox"
+                                   name="optional[]"
+                                   id="keyboard"
+                                   value="keyboard">
+                                   <label for="keyboard">Teclado Gamer</label> 
+                                </li>
+                                <li>
+                                    <input type="checkbox"
+                                    name="optional[]"
+                                    id="headset"
+                                    value="headset"
+                                    >
+                                    <label for="headeset">Headset</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox"
+                                    name="optional[]"
+                                    id="monitor"
+                                    value="monitor">
+                                    <label for="monitor">Monitor Gamer</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="optional_box">
+                            <ul class="optional-list">
+                                <li>
+                                    <input type="checkbox"
+                                    name="optional[]"
+                                    id="mousepad"
+                                    value="mousepad">
+                                    <label for="mousepad">Mousepad Gamer</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox"
+                                    name="optional[]"
+                                    id="chair"
+                                    value="chair">
+                                    <label for="chair">Cadeira Gamer</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox"
+                                    name="optional[]"
+                                    id="router"
+                                    value="router">
+                                    <label for="router">Roteador</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox"
+                                    name="optional[]"
+                                    id="gamercontrol"
+                                    value="gamecontrol">
+                                    <label for="gamecontrol">Controle</label>
+                                </li>
+                            </ul>
+                        </div>
+                    <input type="submit" value="Enviar" class="btn-submit">
+                    <input type="reset" value="Reiniciar" class="rst-submit">
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

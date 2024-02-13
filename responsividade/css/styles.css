@@ -1,0 +1,25 @@
+h1 {
+    color: red;
+}
+
+h3 {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        color: blue;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    h1 {
+        color: yellow;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    h3 {
+        display: block;
+    }
+}
